@@ -8,4 +8,4 @@
   hosts: webservers
   tasks:
     - name: Upgrade packages in apt
-      ansible.builtin.import_tasks: playbook_apt_upgrade_packages.yaml
+      ansible.builtin.import_tasks: tasks/playbook_apt_upgrade_packages.yaml
