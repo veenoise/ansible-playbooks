@@ -1,0 +1,15 @@
+- name: Get updated packages cache
+  ansible.builtin.apt:
+    update_cache: true
+
+- name: Upgrade packages
+  ansible.builtin.apt:
+    upgrade: "safe"
+
+- name: Perform autoremove
+  ansible.builtin.apt:
+    autoremove: true
+
+- name: Perform autoclean
+  ansible.builtin.apt:
+    autoclean: true
